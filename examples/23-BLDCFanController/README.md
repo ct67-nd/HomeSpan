@@ -25,17 +25,12 @@ Open **Library Manager** (`Ctrl + Shift + I`) in Arduino IDE and install:
 3. **Adafruit GFX Library**
 
 #### **Partition Scheme Configuration (CRITICAL)**
-
 HomeSpan includes Apple's full HomeKit cryptography stack, making the compiled firmware large. Leaving the default partition scheme will result in a `Sketch too big` error.
 
 1. Go to **Tools** in Arduino IDE.
 2. Select **Board** $\rightarrow$ **ESP32C3 Dev Module** (or your specific ESP32-C3 board).
 3. Hover over **Partition Scheme**.
 4. Select: **Huge APP (3MB No OTA/1MB SPIFFS)** *(or Minimal SPIFFS (Large APPS with OTA))*.
-
----
-
-```
 
 ---
 
@@ -54,10 +49,7 @@ HomeSpan includes Apple's full HomeKit cryptography stack, making the compiled f
 2. Open the **Apple Home** app $\rightarrow$ Tap **`+`** $\rightarrow$ Tap **Add Accessory**.
 3. Select **More options... / Don't Have a Code or Cannot Scan?**
 4. Select **HomeSpan Fan** from the discovered accessories list.
-5. Enter the default HomeSpan setup code:
-
-$$\mathbf{466 - 37 - 726}$$
-
+5. Enter the default HomeSpan setup code: **`466-37-726`**
 6. Tap **Add Anyway** if prompted about an uncertified accessory. Assign the device to your desired room.
 
 ---
